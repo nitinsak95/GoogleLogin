@@ -12,6 +12,8 @@
 		A48DD8922080905E0063A1D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48DD8902080905E0063A1D3 /* Main.storyboard */; };
 		A48DD8942080905E0063A1D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A48DD8932080905E0063A1D3 /* Assets.xcassets */; };
 		A48DD8972080905E0063A1D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48DD8952080905E0063A1D3 /* LaunchScreen.storyboard */; };
+		A48DD8A520809CD50063A1D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A48DD8A420809CD50063A1D3 /* GoogleService-Info.plist */; };
+		BFE4364B2E7A7B99CA91157C /* Pods_glogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7939931260E1E64AA7A3C23 /* Pods_glogin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		A48DD8932080905E0063A1D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A48DD8962080905E0063A1D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A48DD8982080905F0063A1D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A48DD8A420809CD50063A1D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B7FB4FC2E9AA63ACF739AA31 /* Pods-glogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-glogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-glogin/Pods-glogin.release.xcconfig"; sourceTree = "<group>"; };
+		D7A8877F1974E537D8D51B5C /* Pods-glogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-glogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-glogin/Pods-glogin.debug.xcconfig"; sourceTree = "<group>"; };
+		F7939931260E1E64AA7A3C23 /* Pods_glogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_glogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE4364B2E7A7B99CA91157C /* Pods_glogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6603C28B227E0254E2B6A124 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7A8877F1974E537D8D51B5C /* Pods-glogin.debug.xcconfig */,
+				B7FB4FC2E9AA63ACF739AA31 /* Pods-glogin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9C9A3778D337A191F5A4B8C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7939931260E1E64AA7A3C23 /* Pods_glogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A48DD8802080905D0063A1D3 = {
 			isa = PBXGroup;
 			children = (
 				A48DD88B2080905D0063A1D3 /* glogin */,
 				A48DD88A2080905D0063A1D3 /* Products */,
+				6603C28B227E0254E2B6A124 /* Pods */,
+				9C9A3778D337A191F5A4B8C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +80,7 @@
 		A48DD88B2080905D0063A1D3 /* glogin */ = {
 			isa = PBXGroup;
 			children = (
+				A48DD8A420809CD50063A1D3 /* GoogleService-Info.plist */,
 				A48DD88C2080905D0063A1D3 /* AppDelegate.swift */,
 				A48DD88E2080905E0063A1D3 /* ViewController.swift */,
 				A48DD8902080905E0063A1D3 /* Main.storyboard */,
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A48DD89B2080905F0063A1D3 /* Build configuration list for PBXNativeTarget "glogin" */;
 			buildPhases = (
+				34D0459977B604A6BBB37F43 /* [CP] Check Pods Manifest.lock */,
 				A48DD8852080905D0063A1D3 /* Sources */,
 				A48DD8862080905D0063A1D3 /* Frameworks */,
 				A48DD8872080905D0063A1D3 /* Resources */,
+				B2489DB71B3E30E2092A61D6 /* [CP] Embed Pods Frameworks */,
+				2E4DD248AE50B38BDBC68648 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +154,74 @@
 			buildActionMask = 2147483647;
 			files = (
 				A48DD8972080905E0063A1D3 /* LaunchScreen.storyboard in Resources */,
+				A48DD8A520809CD50063A1D3 /* GoogleService-Info.plist in Resources */,
 				A48DD8942080905E0063A1D3 /* Assets.xcassets in Resources */,
 				A48DD8922080905E0063A1D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E4DD248AE50B38BDBC68648 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-glogin/Pods-glogin-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-glogin/Pods-glogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34D0459977B604A6BBB37F43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-glogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2489DB71B3E30E2092A61D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-glogin/Pods-glogin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-glogin/Pods-glogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A48DD8852080905D0063A1D3 /* Sources */ = {
@@ -272,6 +364,7 @@
 		};
 		A48DD89C2080905F0063A1D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7A8877F1974E537D8D51B5C /* Pods-glogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +380,7 @@
 		};
 		A48DD89D2080905F0063A1D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7FB4FC2E9AA63ACF739AA31 /* Pods-glogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
