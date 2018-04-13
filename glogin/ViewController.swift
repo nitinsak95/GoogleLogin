@@ -9,10 +9,13 @@
 import UIKit
 import GoogleSignIn
 import Google
+import Kingfisher
 
 class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
 
     @IBOutlet weak var labelUserEmail: UILabel!
+    @IBOutlet weak var lbName: UILabel!
+    @IBOutlet weak var imgUser: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,8 +48,11 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
         }
         
         //if success display the email on label
-        labelUserEmail.text = user.profile.name
+        lbName.text = user.profile.name
+        labelUserEmail.text = user.profile.email
         
+        let url = user.profile.imageURL(withDimension: 100)
+        imgUser.kf.setImage(with: url)
     }
     
 }
