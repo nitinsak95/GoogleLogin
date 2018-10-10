@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A404FB522084B36F00AAA4B4 /* TabBarrVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A404FB512084B36F00AAA4B4 /* TabBarrVC.swift */; };
+		A48372D7208471AE009C086C /* LoginDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48372D6208471AE009C086C /* LoginDataVC.swift */; };
 		A48DD88D2080905D0063A1D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD88C2080905D0063A1D3 /* AppDelegate.swift */; };
 		A48DD88F2080905E0063A1D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD88E2080905E0063A1D3 /* ViewController.swift */; };
 		A48DD8922080905E0063A1D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48DD8902080905E0063A1D3 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A404FB512084B36F00AAA4B4 /* TabBarrVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarrVC.swift; sourceTree = "<group>"; };
+		A48372D6208471AE009C086C /* LoginDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataVC.swift; sourceTree = "<group>"; };
 		A48DD8892080905D0063A1D3 /* glogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = glogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48DD88C2080905D0063A1D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A48DD88E2080905E0063A1D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 				A48DD8932080905E0063A1D3 /* Assets.xcassets */,
 				A48DD8952080905E0063A1D3 /* LaunchScreen.storyboard */,
 				A48DD8982080905F0063A1D3 /* Info.plist */,
+				A48372D6208471AE009C086C /* LoginDataVC.swift */,
+				A404FB512084B36F00AAA4B4 /* TabBarrVC.swift */,
 			);
 			path = glogin;
 			sourceTree = "<group>";
@@ -231,6 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A48DD88F2080905E0063A1D3 /* ViewController.swift in Sources */,
+				A404FB522084B36F00AAA4B4 /* TabBarrVC.swift in Sources */,
+				A48372D7208471AE009C086C /* LoginDataVC.swift in Sources */,
 				A48DD88D2080905D0063A1D3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
